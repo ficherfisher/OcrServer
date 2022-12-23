@@ -1,0 +1,14 @@
+0:
+  "no username labels"
+1:
+  "no nonce labels"
+2:
+  "no sign labels"
+3:
+  "no picture_url labels"
+4:
+  "there is something wrong with you (username or password)"
+5:
+  "do not download the picture from this url"
+6:
+  "successfully"
