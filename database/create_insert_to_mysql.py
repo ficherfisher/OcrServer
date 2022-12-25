@@ -77,10 +77,10 @@ class operate_mysql:
 
 if __name__ == "__main__":
     operate_mysql = operate_mysql()
-    user_name = "firestorm-sea"
-    pass_word = "d4154fQd5453vSFQWd124faFlxzA"
-    email = "none 后续添加"
-    company_name = "武汉踏浪公司"
+    user_name = "******"
+    pass_word = "*****"
+    email = "******"
+    company_name = "******"
     remaining_number = 10000
     operate_mysql.create_user_table()
     operate_mysql.insert_user_table(user_name, pass_word, email, company_name)  # 1todo 增加参数 remaining_number

@@ -7,8 +7,8 @@ class redis_to_mysql:
     def __init__(self):
         self.__conn__ = pymysql.connect(host='localhost',
                                         user='root',
-                                        passwd='Mdf3-bY3H-67gE-7fbo',
-                                        database='ocr_database_server')
+                                        passwd='********',
+                                        database='********')
         self.__cursor__ = self.__conn__.cursor()
         self.__pool_0 = redis.ConnectionPool(host='127.0.0.1', port=6379, db=0)
         self.__r_0 = redis.StrictRedis(connection_pool=self.__pool_0)

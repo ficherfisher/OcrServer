@@ -7,8 +7,8 @@ class mysql_to_redis:
     def __init__(self):
         self.__conn__ = pymysql.connect(host='localhost',
                                         user='root',
-                                        passwd='Mdf3-bY3H-67gE-7fbo',
-                                        database='ocr_database_server')
+                                        passwd='*******',
+                                        database='********')
         self.__cursor__ = self.__conn__.cursor()
         self.__redis_0__ = redis.Redis(host='localhost', port=6379, db=0)
         self.__save_user_redis()

@@ -7,8 +7,8 @@ class insert_mysql:
     def __init__(self):
         self.__conn__ = pymysql.connect(host='localhost',
                                         user='root',
-                                        passwd='2920151643xyp',
-                                        database='ocr_database_server')
+                                        passwd='********',
+                                        database='*********')
         self.__cursor__ = self.__conn__.cursor()
         self.__middleware = middleware
 
