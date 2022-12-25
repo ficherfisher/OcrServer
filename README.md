@@ -1,7 +1,7 @@
 English | [简体中文](README_ch.md)
 
 <p align="center">
- <img src="./doc/img/index.png" align="middle" width = "600"/>
+ <img src="./doc/img/index.png" align="middle" width = "600" height="300"/>
 <p align="center">
 
 
