@@ -48,30 +48,49 @@ OcrServer 实现了针对印尼身份证识别并抽取结构化信息。基于f
 - 运行环境准备  (见[FaceSearch环境准备](https://github.com/ficherfisher/FaceSearch/blob/master/doc/environment.md))
 - [API使用](https://gitee.com/deepminer/api-services)
 - OcrServer详解
-  - [人脸探测](./doc/quickstart.md)
-  - [人脸编码](./doc/quickstart.md)
-  - [编码文件夹](./doc/quickstart.md)
-  - [寻找最相似的人脸](./doc/quickstart.md)
-  - [去重人脸](./doc/quickstart.md)
-
+  - [Ocr](./doc/Ocr.md)
+  - [服务器API](./doc/flask_nginx_gunicorn.md)
+  - [多级缓存持久化](./doc/redis_mysql.md)
 - [联系作者](yupengxiong87@gmail.com)
 
 ## 效果展示
 
 <div align="center">
-    <h5>人脸探测</h5>
-    <img src="./doc/img/show1.png" width="600">
+    <h5>身份证</h5>
+    <img src="./doc/img/" width="400" height="600">
     <br>
-    <h5>人脸相似度</h5>
-    <img src="./doc/img/show2.png" width="600">
-    <br>
-    <h5>寻找最相似的人脸</h5>
-    <img src="./doc/img/show3.png" width="600">
-    <br>
-    <h5>已知id 求去重之后的人脸列表和人脸个数</h5>
-    <img src="./doc/img/show4.png" width="600">
+    <h5>返回结果示例</h5>
+    <img src="./doc/img/OCR_res.png" width="400" height="500">
 </div>
 
+
+
+```json
+{
+  "status_code": 6,
+  "result": {
+    "PROVINSI": "JAWA BARAT",
+    "City": "KOTA BANDUNG",
+    "NIK": "3273130102920002",
+    "Nama": "DOLIPARAMA",
+    "Jenis Kelamin": "LAKILAKI",
+    "Alamat": ":JLDURMAIVNO.5",
+    "Kel/Desa": "TURANGGA",
+    "Kecamatan": "ENGKONG",
+    "Agama": "ISLAM",
+    "Status Perkawinan": "KAWIN",
+    "Pekerjaan": ":PELAJAR/MAHASISWA",
+    "Kewarga negaraan": "WNI",
+    "Beriaku Hingga": "",
+    "Tempat": "DKIJAKARTA",
+    "TglLahir": "01-02-1992",
+    "RT": "002",
+    "RW": "009"
+  },
+  "tips": "successfully"
+}
+
+```
 
 
 
