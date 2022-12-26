@@ -12,15 +12,5 @@ PPOCRLabel是一款适用于OCR领域的半自动化图形标注工具，内置P
 
 > PPOCRLabel 在windows 上使用时需要安装c++的编译链。此处提供下载地址：[Google云 ](https://drive.google.com/drive/folders/1npo-iSGj-xh53Bb9YyUxdB44CTQCHU0a)
 
-
-
-
-
-
-
-- 
-- OcrServer详解
-  - [Ocr](./doc/Ocr.md)
-  - [服务器API](./doc/flask_nginx_gunicorn.md)
-  - [多级缓存持久化](./doc/redis_mysql.md)
-- [联系作者](
+- 重新训练detect、rec模块见paddlepaddleOcr
+- [联系作者]()
